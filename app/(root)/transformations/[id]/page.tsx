@@ -1,11 +1,18 @@
-import React from 'react'
+import { auth } from "@clerk/nextjs";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { getImageSize } from "@/lib/utils";
 
-const TransformationsPage = () => {
+const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
+  const { userId } = auth();
+
+
   return (
-    <div>
-      TransformationsPage
-    </div>
-  )
-}
+    <>
+     
+    </>
+  );
+};
 
-export default TransformationsPage
+export default ImageDetails;
