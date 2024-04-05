@@ -19,7 +19,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
         <ul className="flex-center w-full gap-20">
           {navLinks.slice(1, 5).map((link) => (
             <Link
-              key={link.route} 
+              key={link.route}
               href={link.route}
               className="flex-center flex-col gap-2"
             >
